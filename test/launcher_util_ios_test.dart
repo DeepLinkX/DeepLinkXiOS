@@ -12,23 +12,23 @@ void main() {
   group('LauncherUtil', () {
     // Tests for unimplemented methods
     group('unimplemented methods', () {
-      test('isAndroidAppInstalled throws UnimplementedError', () {
+      test('isAppInstalledByPackageName throws UnimplementedError', () {
         expect(
-          () => launcherUtil.isAndroidAppInstalled('com.example.app'),
+          () => launcherUtil.isAppInstalledByPackageName('com.example.app'),
           throwsA(isA<UnimplementedError>()),
         );
       });
 
-      test('launchAndroidApp throws UnimplementedError', () {
+      test('launchAppByPackageName throws UnimplementedError', () {
         expect(
-          () => launcherUtil.launchAndroidApp('com.example.app'),
+          () => launcherUtil.launchAppByPackageName('com.example.app'),
           throwsA(isA<UnimplementedError>()),
         );
       });
 
       test('launchIntent throws UnimplementedError', () {
         expect(
-          () => launcherUtil.launchIntent(AndroidIntentOption(action: '')),
+          () => launcherUtil.launchIntent(const AndroidIntentOption(action: '')),
           throwsA(isA<UnimplementedError>()),
         );
       });
