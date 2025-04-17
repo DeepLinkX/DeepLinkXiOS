@@ -1,6 +1,6 @@
 name: deeplink_x_ios
 description: "iOS implementation of the deeplink_x plugin."
-version: 0.0.2
+version: 0.1.0
 
 repository: https://github.com/DeeplinkX/DeeplinkXiOS
 
